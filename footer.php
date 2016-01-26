@@ -11,18 +11,40 @@
 
 ?>
 
-	</div><!-- #content -->
+<footer id="colophon" class="site-footer wrap" role="contentinfo">
+	<div class="container container-small">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="mark">
+					<img src="<?php echo get_bloginfo('template_directory');?>/images/udacity_mark.png" width="100%" alt="Udacity, Inc." />
+				</div>
+			</div>
 
-</div><!-- .container -->
+			<div class="col-md-9">
+				<div class="row">
+					<div class="widget-area" role="complementary">
+						<?php dynamic_sidebar('sidebar-footer'); ?>
+					</div><!-- .widget-area -->
+				</div>
+			</div>
+		</div>
 
-<footer id="colophon" class="site-footer container-fluid" role="contentinfo">
-	<div class="container">
-		<div class="site-info">
-			<a href="<?php echo esc_url(__('https://wordpress.org/', 'udacity_wp')); ?>"><?php printf(esc_html__('Proudly powered by %s', 'udacity_wp'), 'WordPress'); ?></a>
-			<span class="sep"> | </span>
-			<?php printf(esc_html__('Theme: %1$s by %2$s.', 'udacity_wp'), 'udacity_wp', '<a href="http://automattic.com/" rel="designer">Automattic</a>'); ?>
-		</div><!-- .site-info -->
-	</div><!-- .container -->
+		<div class="row site-info-row">
+			<div class="col-md-2">
+
+			</div>
+			<div class="col-md-6">
+				<div class="site-info">
+					Nanodegree is a trademark of Udacity.
+					<span class="sep"> | </span>
+					&copy; 2011-<?php echo date('Y'); ?> Udacity, Inc.
+				</div><!-- .site-info -->
+			</div>
+			<div class="col-md-4">
+
+			</div>
+		</div>
+	</div>
 </footer><!-- #colophon -->
 </div><!-- #page -->
 
