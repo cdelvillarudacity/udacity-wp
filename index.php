@@ -14,6 +14,41 @@
 
 get_header(); ?>
 
+<div class="wrap page-masthead"
+     style="background:url('http://localhost/Udacity/wp-content/uploads/2016/01/photo-1448932223592-d1fc686e76ea.jpeg') no-repeat bottom center;">
+	<div class="after">
+		<div class="container container-small">
+
+			<?php
+			$args = array(
+				'post_type' => 'post',
+				'posts_per_page' => 1,
+				'post_status' => 'publish',
+				'category_name' => 'featured',
+			);
+			$author_query = new WP_Query($args);
+
+			if ($author_query->have_posts()) :
+				while ($author_query->have_posts()) :
+					$author_query->the_post(); ?>
+
+					<div class="row category">
+						<?php the_category(' - '); ?>
+					</div>
+					<div class="row title">
+						<?php the_title(); ?>
+						<br/>
+						<a href="<?php echo get_permalink(); ?>" class="btn btn-primary">Read More</a>
+					</div>
+					<?php
+				endwhile;
+			endif;
+			?>
+
+		</div>
+	</div>
+</div>
+
 <div class="container container-small">
 
 	<div id="content" class="site-content">

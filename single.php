@@ -15,12 +15,12 @@ get_header(); ?>
 	$large_image_url = wp_get_attachment_image_src(get_post_thumbnail_id(), 'large');
 	?>
 
-	<div class="wrap single-post-masthead" style="background:url('http://localhost/Udacity/wp-content/uploads/2016/01/photo-1448932223592-d1fc686e76ea.jpeg') no-repeat center center;">
+	<div class="wrap single-post-masthead" style="background:url('http://localhost/Udacity/wp-content/uploads/2016/01/photo-1448932223592-d1fc686e76ea.jpeg') no-repeat bottom center;">
 		<div class="after">
 			<div class="container container-small">
 
 				<div class="row category">
-					<?php the_category(' '); ?>
+					<?php the_category(' - '); ?>
 				</div>
 				<div class="row title">
 					<?php the_title(); ?>
@@ -28,7 +28,7 @@ get_header(); ?>
 				<div class="row meta">
 					<?php echo get_avatar(get_the_author_meta('ID'), 35); ?>
 					<p>
-						By <i><?php the_author_meta('display_name'); ?></i> <br/> <?php the_date('F j, Y', '', ''); ?>
+						By <strong><i><?php the_author_meta('display_name'); ?></i></strong> <br/> <?php the_date('F j, Y', '', ''); ?>
 					</p>
 				</div>
 
