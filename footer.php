@@ -46,6 +46,30 @@
 		</div>
 	</div>
 </footer><!-- #colophon -->
+
+<!-- Subscribe Modal -->
+<div class="modal fade" id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="subscribeModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			</div>
+			<div class="modal-body">
+				<h3 class="modal-title" id="subscribeModalLabel">Subscribe To Our Newsletter</h3>
+				<small>learning = growing</small>
+				<p>Sign up for Udacity blog updates to get the latest in guidance and inspiration as you discover programming, web development, data science, and more.</p>
+				<form class="form-inline">
+					<div class="form-group">
+						<input type="email" class="form-control" id="subscribeEmail" placeholder="Email Address">
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+				<p><small>By subscribing you agree to our <a href="">terms and conditions</a></small></p>
+			</div>
+		</div>
+	</div>
+</div>
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

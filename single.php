@@ -15,7 +15,8 @@ get_header(); ?>
 	$large_image_url = wp_get_attachment_image_src(get_post_thumbnail_id(), 'large');
 	?>
 
-	<div class="wrap single-post-masthead" style="background:url('http://localhost/Udacity/wp-content/uploads/2016/01/photo-1448932223592-d1fc686e76ea.jpeg') no-repeat bottom center;">
+	<div class="wrap single-post-masthead"
+	     style="background:url('http://localhost/Udacity/wp-content/uploads/2016/01/photo-1448932223592-d1fc686e76ea.jpeg') no-repeat bottom center;">
 		<div class="after">
 			<div class="container container-small">
 
@@ -28,7 +29,8 @@ get_header(); ?>
 				<div class="row meta">
 					<?php echo get_avatar(get_the_author_meta('ID'), 35); ?>
 					<p>
-						By <strong><i><?php the_author_meta('display_name'); ?></i></strong> <br/> <?php the_date('F j, Y', '', ''); ?>
+						By <strong><i><?php the_author_meta('display_name'); ?></i></strong>
+						<br/> <?php the_date('F j, Y', '', ''); ?>
 					</p>
 				</div>
 
@@ -69,7 +71,8 @@ get_header(); ?>
 							'post_type' => 'post',
 							'posts_per_page' => 3,
 							'post_status' => 'publish',
-							'author_name' => the_author_meta('ID'),
+							'author_name' => get_the_author_meta('login'),
+							'post__not_in' => array($post->ID)
 						);
 						$author_query = new WP_Query($args);
 
@@ -80,6 +83,8 @@ get_header(); ?>
 
 							endwhile;
 						endif;
+
+						wp_reset_postdata();
 						?>
 					</div>
 				</div>
