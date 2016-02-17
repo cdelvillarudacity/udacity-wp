@@ -12,15 +12,16 @@
 ?>
 
 <footer id="colophon" class="site-footer wrap" role="contentinfo">
-	<div class="container container-small">
+	<div class="container">
 		<div class="row">
-			<div class="col-md-3">
+			<div class="col-md-2">
 				<div class="mark">
-					<img src="<?php echo get_bloginfo('template_directory');?>/images/udacity_mark.png" width="100%" alt="Udacity, Inc." />
+					<img src="https://endor-dev.s3-us-west-2.amazonaws.com/sites/566671d2495b2d0018000000/theme/images/rebrand/logomark.transition.png?1455666592" alt="Udacity">
+					<!-- <img src="<?php // echo get_bloginfo('template_directory');?>/images/udacity_mark.png" width="100%" alt="Udacity, Inc." /> -->
 				</div>
 			</div>
 
-			<div class="col-md-9">
+			<div class="col-md-10">
 				<div class="row">
 					<div class="widget-area" role="complementary">
 						<?php dynamic_sidebar('sidebar-footer'); ?>
@@ -30,9 +31,6 @@
 		</div>
 
 		<div class="row site-info-row">
-			<div class="col-md-2">
-
-			</div>
 			<div class="col-md-6">
 				<div class="site-info">
 					Nanodegree is a trademark of Udacity.
@@ -40,8 +38,15 @@
 					&copy; 2011-<?php echo date('Y'); ?> Udacity, Inc.
 				</div><!-- .site-info -->
 			</div>
-			<div class="col-md-4">
-
+			<div class="col-md-6">
+				<nav class="social">
+					<ul class="social_links">
+						<li><a href="https://twitter.com/udacity"><img src="https://endor-dev.s3-us-west-2.amazonaws.com/sites/566671d2495b2d0018000000/theme/images/twitter.min.svg?1455666592" alt="Twitter"></a></li>
+						<li><a href="https://www.facebook.com/Udacity"><img src="https://endor-dev.s3-us-west-2.amazonaws.com/sites/566671d2495b2d0018000000/theme/images/facebook.min.svg?1455666592" alt="Facebook"></a></li>
+						<li><a href="https://plus.google.com/+Udacity/posts"><img src="https://endor-dev.s3-us-west-2.amazonaws.com/sites/566671d2495b2d0018000000/theme/images/g_plus.min.svg?1455666592" alt="Google +"></a></li>
+						<li><a href="https://www.linkedin.com/company/udacity"><img src="https://endor-dev.s3-us-west-2.amazonaws.com/sites/566671d2495b2d0018000000/theme/images/linkedin.min.svg?1455666592" alt="LinkedIn"></a></li>
+					</ul>
+				</nav>
 			</div>
 		</div>
 	</div>

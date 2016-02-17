@@ -28,10 +28,11 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<header id="masthead" class="site-header" role="banner">
-		<div class="container container-small">
+		<div class="container">
 			<div class="site-branding col-md-4">
 				<a href="<?php echo site_url(); ?>">
-					<img src="<?php echo get_bloginfo('template_directory');?>/images/logo.png" width="90%" border="0" alt="Udacity, Inc." />
+					<img src="https://endor-dev.s3-us-west-2.amazonaws.com/sites/566671d2495b2d0018000000/theme/images/rebrand/logo.transition.png?1455666592" alt="Udacity">
+					<!-- <img src="<?php // echo get_bloginfo('template_directory');?>/images/logo.png" width="90%" border="0" alt="Udacity, Inc." /> -->
 				</a>
 			</div><!-- .site-branding -->
 

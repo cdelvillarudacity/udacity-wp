@@ -17,7 +17,7 @@ get_header(); ?>
 <div class="wrap page-masthead"
      style="background:url('http://localhost/Udacity/wp-content/uploads/2016/01/photo-1448932223592-d1fc686e76ea.jpeg') no-repeat bottom center;">
 	<div class="after">
-		<div class="container container-small">
+		<div class="container">
 
 			<?php
 			$args = array(
@@ -49,7 +49,7 @@ get_header(); ?>
 	</div>
 </div>
 
-<div class="container container-small">
+<div class="container">
 
 	<div id="content" class="site-content">
 

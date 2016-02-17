@@ -18,7 +18,7 @@ get_header(); ?>
 	<div class="wrap single-post-masthead"
 	     style="background:url('http://localhost/Udacity/wp-content/uploads/2016/01/photo-1448932223592-d1fc686e76ea.jpeg') no-repeat bottom center;">
 		<div class="after">
-			<div class="container container-small">
+			<div class="container">
 
 				<div class="row category">
 					<?php the_category(' - '); ?>
@@ -38,7 +38,7 @@ get_header(); ?>
 		</div>
 	</div>
 
-	<div class="container container-small">
+	<div class="container">
 
 		<div id="content" class="site-content">
 
@@ -56,7 +56,7 @@ get_header(); ?>
 	</div><!-- .container -->
 
 	<div class="wrap post-author-wrap">
-		<div class="container container-small">
+		<div class="container">
 			<div class="row">
 				<?php echo get_avatar(get_the_author_meta('ID'), 50); ?>
 			</div>
@@ -69,7 +69,7 @@ get_header(); ?>
 						<?php
 						$args = array(
 							'post_type' => 'post',
-							'posts_per_page' => 3,
+							'posts_per_page' => 2,
 							'post_status' => 'publish',
 							'author_name' => get_the_author_meta('login'),
 							'post__not_in' => array($post->ID)
@@ -79,7 +79,7 @@ get_header(); ?>
 						if ($author_query->have_posts()) :
 							while ($author_query->have_posts()) : $author_query->the_post();
 
-								the_title(sprintf('<div class="author-entry col-md-3"><h2><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h2></div>');
+								the_title(sprintf('<a href="%s" rel="bookmark" class="author-entry col-md-5"><h2>', esc_url(get_permalink())), '</h2></a>');
 
 							endwhile;
 						endif;
@@ -95,7 +95,7 @@ get_header(); ?>
 	</div>
 
 	<div class="wrap">
-		<div class="container container-small">
+		<div class="container">
 			<div class="row post-navigation">
 				<div class="post-navigation-left col-md-6">
 					<h5>Previous Post</h5>

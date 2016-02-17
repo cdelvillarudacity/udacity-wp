@@ -112,7 +112,7 @@ function udacity_wp_widgets_init() {
 		                 'name' => esc_html__('Footer', 'udacity_wp'),
 		                 'id' => 'sidebar-footer',
 		                 'description' => __('Widgets in this area will be shown on all posts and pages in the footer.', 'udacity_wp'),
-		                 'before_widget' => '<div id="%1$s" class="widget %2$s col-md-3">',
+		                 'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		                 'after_widget' => '</div>',
 		                 'before_title' => '<h2 class="widget-title">',
 		                 'after_title' => '</h2>',
