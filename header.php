@@ -21,60 +21,53 @@
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 	<script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
-
 	<?php wp_head(); ?>
+	<script>
+		jQuery(document).ready(function () {
+			jQuery(".nav_toggle").click(function (e) {
+				jQuery("nav").toggleClass("nav--on"), e.preventDefault()
+			}), jQuery(".footer_nav_toggle h3").click(function (e) {
+				jQuery(this).parent().toggleClass("nav--on"), e.preventDefault()
+			});
+		});
+	</script>
 </head>
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<header id="masthead" class="site-header" role="banner">
-		<div class="container">
-			<div class="site-branding col-md-4">
-				<a href="<?php echo site_url(); ?>">
-					<img src="https://endor-dev.s3-us-west-2.amazonaws.com/sites/566671d2495b2d0018000000/theme/images/rebrand/logo.transition.png?1455666592" alt="Udacity">
-					<!-- <img src="<?php // echo get_bloginfo('template_directory');?>/images/logo.png" width="90%" border="0" alt="Udacity, Inc." /> -->
-				</a>
-			</div><!-- .site-branding -->
+		<div class="container nav-container">
+			<row>
+				<div class="site-branding col-xs-4">
+					<a href="<?php echo site_url(); ?>">
+						<img
+							src="https://endor-dev.s3-us-west-2.amazonaws.com/sites/566671d2495b2d0018000000/theme/images/rebrand/logo.transition.png?1455666592"
+							alt="Udacity">
+						<!-- <img src="<?php // echo get_bloginfo('template_directory');?>/images/logo.png" width="90%" border="0" alt="Udacity, Inc." /> -->
+					</a>
+				</div><!-- .site-branding -->
 
-			<nav id="site-navigation" class="main-navigation navbar navbar-default col-md-8" role="navigation">
-				<a class="skip-link screen-reader-text"
-				   href="#content"><?php _e('Skip to content', 'udacity_wp'); ?></a>
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse"
-					        data-target="#navbar-collapse-main">
-						<span class="sr-only"><?php _e('Toggle navigation', 'udacity_wp'); ?></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<!--<a class="navbar-brand" href="#">Brand</a>-->
+				<div class="col-xs-8 nav-block">
+					<a data-navbar-guest="" href="https://www.udacity.com/account/auth#!/signup" class="sign_in_link"
+					   style="display: block;">Sign Up</a>
+					<a data-navbar-guest="" href="https://www.udacity.com/account/auth#!/signin" class="sign_in_link"
+					   style="display: block;">Sign In</a>
+					<nav class="main">
+						<ul class="main_nav">
+							<li class="home_link"><a href="/">Home</a></li>
+							<li class="nanodegree_link"><a href="/nanodegree">Nanodegree</a></li>
+							<li class="free_courses_link"><a href="/courses/all">Catalog</a></li>
+						</ul>
+						<a href="#" class="nav_toggle">
+							<span class="bar bar_top"></span>
+
+							<span class="bar bar_mid"></span>
+
+							<span class="bar bar_bottom"></span>
+						</a>
+					</nav>
 				</div>
-
-				<div class="collapse navbar-collapse " id="navbar-collapse-main">
-					<ul class="nav navbar-nav">
-						<?php if (has_nav_menu('primary')) :
-							wp_nav_menu(array(
-								            'theme_location' => 'primary',
-								            'container' => false,
-								            //'menu_class'      => 'nav navbar-nav',//  'nav navbar-right'
-								            'walker' => new Bootstrap_Nav_Menu(),
-								            'fallback_cb' => null,
-								            'items_wrap' => '%3$s',// skip the containing <ul>
-							            )
-							);
-						else :
-							wp_list_pages(array(
-								              'menu_class' => 'nav navbar-nav',//  'nav navbar-right'
-								              'walker' => new Bootstrap_Page_Menu(),
-								              'title_li' => null,
-							              )
-							);
-						endif; ?>
-					</ul>
-					<?php // get_search_form(); ?>
-				</div><!-- /.navbar-collapse -->
-
-			</nav><!-- #site-navigation -->
+			</row>
 		</div>
 
 		<div id="featured-post" class="container-fluid">

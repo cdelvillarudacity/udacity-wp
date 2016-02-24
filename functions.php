@@ -126,6 +126,7 @@ add_action('widgets_init', 'udacity_wp_widgets_init');
  */
 function udacity_wp_scripts() {
 	wp_enqueue_style('_s-style', get_stylesheet_uri());
+	wp_enqueue_style('udacity-style', get_template_directory_uri() . '/udacity.css');
 
 	wp_enqueue_script('_s-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true);
 

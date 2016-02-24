@@ -32,8 +32,20 @@ get_header(); ?>
 						By <strong><i><?php the_author_meta('display_name'); ?></i></strong>
 						<br/> <?php the_date('F j, Y', '', ''); ?>
 					</p>
+					<div class="social-share">
+						<a href="https://twitter.com/intent/tweet?url=<?php the_permalink(); ?>&via=udacity&text=<?php the_title(); ?>"
+						   target="_blank" onclick="var w=window.open(this.href,this.target,'width=500,height=400');
+return w?false:true" class="twitter"></a>
+						<a href="http://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" target="_blank"
+						   onclick="var w=window.open(this.href,this.target,'width=500,height=400');
+return w?false:true" class="facebook"></a>
+						<a href="https://plus.google.com/share?url=<?php the_permalink(); ?>" target="_blank" onclick="var w=window.open(this.href,this.target,'width=500,height=400');
+return w?false:true" class="google"></a>
+						<a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>&title=<?php the_title(); ?>"
+						   target="_blank" onclick="var w=window.open(this.href,this.target,'width=500,height=400');
+return w?false:true" class="linkedin"></a>
+					</div>
 				</div>
-
 			</div>
 		</div>
 	</div>
@@ -79,7 +91,7 @@ get_header(); ?>
 						if ($author_query->have_posts()) :
 							while ($author_query->have_posts()) : $author_query->the_post();
 
-								the_title(sprintf('<a href="%s" rel="bookmark" class="author-entry col-md-5"><h2>', esc_url(get_permalink())), '</h2></a>');
+								the_title(sprintf('<a href="%s" class="category_btn col-sm-6"><span>', esc_url(get_permalink())), '</span></a>');
 
 							endwhile;
 						endif;
@@ -88,7 +100,32 @@ get_header(); ?>
 						?>
 					</div>
 				</div>
-				<div class="col-md-5">
+				<div class="col-md-5 social-share">
+					<div class="row">
+						<h4>Share This Post</h4>
+						<ul class="share-post">
+							<a href="https://twitter.com/intent/tweet?url=<?php the_permalink(); ?>&via=udacity&text=<?php the_title(); ?>"
+							   target="_blank" onclick="var w=window.open(this.href,this.target,'width=500,height=400');
+return w?false:true">
+								<li class="twitter">Twitter</li>
+							</a>
+							<a href="http://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>"
+							   target="_blank" onclick="var w=window.open(this.href,this.target,'width=500,height=400');
+return w?false:true">
+								<li class="facebook">Facebook</li>
+							</a>
+							<a href="https://plus.google.com/share?url=<?php the_permalink(); ?>" target="_blank"
+							   onclick="var w=window.open(this.href,this.target,'width=500,height=400');
+return w?false:true">
+								<li class="google">Google+</li>
+							</a>
+							<a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>&title=<?php the_title(); ?>"
+							   target="_blank" onclick="var w=window.open(this.href,this.target,'width=500,height=400');
+return w?false:true">
+								<li class="linkedin">LinkedIn</li>
+							</a>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>

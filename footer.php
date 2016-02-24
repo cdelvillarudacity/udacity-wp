@@ -14,37 +14,118 @@
 <footer id="colophon" class="site-footer wrap" role="contentinfo">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-2">
+			<div class="col-sm-2">
 				<div class="mark">
-					<img src="https://endor-dev.s3-us-west-2.amazonaws.com/sites/566671d2495b2d0018000000/theme/images/rebrand/logomark.transition.png?1455666592" alt="Udacity">
+					<img
+						src="https://endor-dev.s3-us-west-2.amazonaws.com/sites/566671d2495b2d0018000000/theme/images/rebrand/logomark.transition.png?1455666592"
+						alt="Udacity">
 					<!-- <img src="<?php // echo get_bloginfo('template_directory');?>/images/udacity_mark.png" width="100%" alt="Udacity, Inc." /> -->
 				</div>
 			</div>
 
-			<div class="col-md-10">
-				<div class="row">
-					<div class="widget-area" role="complementary">
-						<?php dynamic_sidebar('sidebar-footer'); ?>
-					</div><!-- .widget-area -->
-				</div>
+			<div class="col-sm-10">
+				<nav class="foot">
+					<ul class="footer_nav">
+						<li class="footer_nav_toggle">
+							<h3>Popular Nanodegree Programs</h3>
+							<ul class="nav_list">
+
+
+								<li><a href="/course/data-analyst-nanodegree--nd002">Data Analyst </a></li>
+
+
+								<li><a href="/course/ios-developer-nanodegree--nd003">iOS Developer </a></li>
+
+
+								<li><a href="/course/tech-entrepreneur-nanodegree--nd007">Tech Entrepreneur </a></li>
+
+
+								<li><a href="/course/machine-learning-engineer-nanodegree--nd009">Machine Learning
+										Engineer </a></li>
+
+
+								<li><a href="/course/beginning-ruby--nd010">Beginning Ruby BETA</a></li>
+
+
+								<li><a href="/course/android-developer-nanodegree--nd801">Android Developer </a></li>
+
+
+								<li><a href="/course/senior-web-developer--nd802">Senior Web Developer</a></li>
+
+
+							</ul>
+						</li>
+						<li class="footer_nav_toggle">
+							<h3>Student Resources</h3>
+							<ul class="nav_list">
+								<li><a href="http://blog.udacity.com">Blog</a></li>
+								<li><a href="/faq">Help&nbsp;&amp;&nbsp;FAQ</a></li>
+								<li><a href="/courses/all">Catalog</a></li>
+								<li><a href="/veterans">Veteran Programs</a></li>
+								<li><a href="https://play.google.com/store/apps/details?id=com.udacity.android">Android
+										App</a></li>
+								<li><a href="https://itunes.apple.com/us/app/id819700933?mt=8">iOS App</a></li>
+							</ul>
+						</li>
+						<li class="footer_nav_toggle">
+							<h3>Udacity</h3>
+							<ul class="nav_list">
+								<li><a href="/us">About</a></li>
+								<li><a href="/press">In the News</a></li>
+								<li><a href="/jobs">Jobs @ Udacity</a></li>
+								<li><a href="/georgia-tech">Georgia Tech</a></li>
+								<li><a href="/business">Udacity for Business</a></li>
+								<li><a href="/employers">Hire Graduates</a></li>
+								<li><a href="/success">Student Success</a></li>
+							</ul>
+						</li>
+						<li class="footer_nav_toggle">
+							<h3>Inquiries</h3>
+							<ul class="nav_list">
+								<!-- <li><a href="#">Press</a></li> -->
+								<li><a href="/contact">Contact Us</a></li>
+								<li><a href="/catalog-api">Developer API</a></li>
+								<li><a href="/legal">Legal</a></li>
+								<li><a href="http://status.udacity.com">Service Status</a></li>
+								<li><a href="/sitemap">Site Map</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
 			</div>
+
+			<!--			<div class="col-md-10">-->
+			<!--				<div class="row">-->
+			<!--					<div class="widget-area" role="complementary">-->
+			<!--						--><?php //dynamic_sidebar('sidebar-footer'); ?>
+			<!--					</div>-->
+			<!--				</div>-->
+			<!--			</div>-->
 		</div>
 
 		<div class="row site-info-row">
-			<div class="col-md-6">
+			<div class="col-sm-6">
 				<div class="site-info">
 					Nanodegree is a trademark of Udacity.
-					<span class="sep"> | </span>
+					<br/>
 					&copy; 2011-<?php echo date('Y'); ?> Udacity, Inc.
 				</div><!-- .site-info -->
 			</div>
-			<div class="col-md-6">
+			<div class="col-sm-6">
 				<nav class="social">
 					<ul class="social_links">
-						<li><a href="https://twitter.com/udacity"><img src="https://endor-dev.s3-us-west-2.amazonaws.com/sites/566671d2495b2d0018000000/theme/images/twitter.min.svg?1455666592" alt="Twitter"></a></li>
-						<li><a href="https://www.facebook.com/Udacity"><img src="https://endor-dev.s3-us-west-2.amazonaws.com/sites/566671d2495b2d0018000000/theme/images/facebook.min.svg?1455666592" alt="Facebook"></a></li>
-						<li><a href="https://plus.google.com/+Udacity/posts"><img src="https://endor-dev.s3-us-west-2.amazonaws.com/sites/566671d2495b2d0018000000/theme/images/g_plus.min.svg?1455666592" alt="Google +"></a></li>
-						<li><a href="https://www.linkedin.com/company/udacity"><img src="https://endor-dev.s3-us-west-2.amazonaws.com/sites/566671d2495b2d0018000000/theme/images/linkedin.min.svg?1455666592" alt="LinkedIn"></a></li>
+						<li><a href="https://twitter.com/udacity"><img
+									src="https://endor-dev.s3-us-west-2.amazonaws.com/sites/566671d2495b2d0018000000/theme/images/twitter.min.svg?1455666592"
+									alt="Twitter"></a></li>
+						<li><a href="https://www.facebook.com/Udacity"><img
+									src="https://endor-dev.s3-us-west-2.amazonaws.com/sites/566671d2495b2d0018000000/theme/images/facebook.min.svg?1455666592"
+									alt="Facebook"></a></li>
+						<li><a href="https://plus.google.com/+Udacity/posts"><img
+									src="https://endor-dev.s3-us-west-2.amazonaws.com/sites/566671d2495b2d0018000000/theme/images/g_plus.min.svg?1455666592"
+									alt="Google +"></a></li>
+						<li><a href="https://www.linkedin.com/company/udacity"><img
+									src="https://endor-dev.s3-us-west-2.amazonaws.com/sites/566671d2495b2d0018000000/theme/images/linkedin.min.svg?1455666592"
+									alt="LinkedIn"></a></li>
 					</ul>
 				</nav>
 			</div>
@@ -57,19 +138,23 @@
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+						aria-hidden="true">&times;</span></button>
 			</div>
 			<div class="modal-body">
 				<h3 class="modal-title" id="subscribeModalLabel">Subscribe To Our Newsletter</h3>
 				<small>learning = growing</small>
-				<p>Sign up for Udacity blog updates to get the latest in guidance and inspiration as you discover programming, web development, data science, and more.</p>
+				<p>Sign up for Udacity blog updates to get the latest in guidance and inspiration as you discover
+					programming, web development, data science, and more.</p>
 				<form class="form-inline">
 					<div class="form-group">
 						<input type="email" class="form-control" id="subscribeEmail" placeholder="Email Address">
 					</div>
 					<button type="submit" class="btn btn-primary">Submit</button>
 				</form>
-				<p><small>By subscribing you agree to our <a href="">terms and conditions</a></small></p>
+				<p>
+					<small>By subscribing you agree to our <a href="">terms and conditions</a></small>
+				</p>
 			</div>
 		</div>
 	</div>
