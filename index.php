@@ -53,6 +53,21 @@ get_header(); ?>
 
 	<div id="content" class="site-content">
 
+		<div class="row page-features">
+
+			<div class="col-sm-9">
+
+				<ul class="tab_list">
+					<li class="active"><a href="#">All Posts</a></li>
+					<?php wp_list_categories('&title_li='); ?>
+				</ul>
+
+			</div>
+
+			<?php get_search_form(); ?>
+
+		</div>
+
 		<div id="primary" class="content-area">
 			<main id="main" class="site-main" role="main">
 

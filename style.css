@@ -3905,10 +3905,21 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn-primary {
-    color: #ffffff;
-    background-color: #02b3e4;
-    border-color: #02b3e4;
+    background: #02b3e4 none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 0.307692em;
+    color: white;
+    display: block;
+    font-size: 15px;
     font-weight: 600;
+    max-width: 20em;
+    padding: 1em 0.25em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background 0.3s ease 0s;
+    width: 100%;
+    letter-spacing: 1.25px;
 }
 
 .btn-primary:focus,
@@ -3919,9 +3930,9 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn-primary:hover {
-    color: #ffffff;
-    background-color: #028bb1;
-    border-color: #028bb1;
+    background: #028bb1 none repeat scroll 0 0;
+    color: #fff;
+    text-decoration: none;
 }
 
 .btn-primary:active,
