@@ -78,6 +78,8 @@ return w?false:true" class="linkedin"></a>
 						<h4><?php the_author_meta('display_name'); ?></h4>
 						<p><?php the_author_meta('description'); ?></p>
 						<h5 class="author-posts">Posts by <?php the_author_meta('first_name'); ?></h5>
+					</div>
+					<div class="row">
 						<?php
 						$args = array(
 							'post_type' => 'post',
@@ -90,8 +92,7 @@ return w?false:true" class="linkedin"></a>
 
 						if ($author_query->have_posts()) :
 							while ($author_query->have_posts()) : $author_query->the_post();
-
-								the_title(sprintf('<a href="%s" class="category_btn col-sm-6"><span>', esc_url(get_permalink())), '</span></a>');
+								the_title(sprintf('<div class="col-sm-6"><a href="%s" class="category_btn"><span>', esc_url(get_permalink())), '</span></a></div>');
 
 							endwhile;
 						endif;

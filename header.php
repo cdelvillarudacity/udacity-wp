@@ -40,10 +40,7 @@
 			<row>
 				<div class="site-branding col-xs-4">
 					<a href="<?php echo site_url(); ?>">
-						<img
-							src="https://endor-dev.s3-us-west-2.amazonaws.com/sites/566671d2495b2d0018000000/theme/images/rebrand/logo.transition.png?1455666592"
-							alt="Udacity">
-						<!-- <img src="<?php // echo get_bloginfo('template_directory');?>/images/logo.png" width="90%" border="0" alt="Udacity, Inc." /> -->
+						 <img src="<?php  echo get_bloginfo('template_directory');?>/images/Udacity_Logo_SVG_200x35.svg" border="0" alt="Udacity" />
 					</a>
 				</div><!-- .site-branding -->
 

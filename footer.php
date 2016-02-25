@@ -16,10 +16,7 @@
 		<div class="row">
 			<div class="col-sm-2">
 				<div class="mark">
-					<img
-						src="https://endor-dev.s3-us-west-2.amazonaws.com/sites/566671d2495b2d0018000000/theme/images/rebrand/logomark.transition.png?1455666592"
-						alt="Udacity">
-					<!-- <img src="<?php // echo get_bloginfo('template_directory');?>/images/udacity_mark.png" width="100%" alt="Udacity, Inc." /> -->
+					 <img src="<?php  echo get_bloginfo('template_directory');?>/images/udacity_mark.png" width="100%" alt="Udacity" />
 				</div>
 			</div>
 
@@ -149,8 +146,8 @@
 				<form class="form-inline">
 					<div class="form-group">
 						<input type="email" class="form-control" id="subscribeEmail" placeholder="Email Address">
+						<button type="submit" class="btn btn-primary">Submit</button>
 					</div>
-					<button type="submit" class="btn btn-primary">Submit</button>
 				</form>
 				<p>
 					<small>By subscribing you agree to our <a href="">terms and conditions</a></small>

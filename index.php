@@ -60,6 +60,17 @@ get_header(); ?>
 				<ul class="tab_list">
 					<li class="active"><a href="#">All Posts</a></li>
 					<?php wp_list_categories('&title_li='); ?>
+					<li class="extra-categories-item">
+						<!-- Single button -->
+						<div class="btn-group">
+							<a class="dropdown-toggle extra-categories-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span class="glyphicon glyphicon-remove-circle gly-rotate-45"></span>
+							</a>
+							<ul class="dropdown-menu extra-categories">
+								<?php wp_list_categories('&title_li='); ?>
+							</ul>
+						</div>
+					</li>
 				</ul>
 
 			</div>
