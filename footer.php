@@ -11,7 +11,7 @@
 
 ?>
 
-<footer id="colophon" class="site-footer wrap" role="contentinfo">
+<footer class="site-footer wrap" role="contentinfo">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-2">

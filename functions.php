@@ -179,3 +179,12 @@ function posts_link_attributes() {
 	return 'class="btn btn-default"';
 }
 
+/**
+ * More link
+ */
+
+add_filter( 'the_content_more_link', 'modify_read_more_link' );
+function modify_read_more_link() {
+	return '<br/><br/><a class="more-link btn btn-default" href="' . get_permalink() . '">Continue Reading</a>';
+}
+

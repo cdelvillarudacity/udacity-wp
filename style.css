@@ -4,7 +4,7 @@ Theme URI: http://blog.udacity.com
 Author: Udacity
 Author URI: http://udacity.com
 Description: The official Udacity WordPress theme. You can find the latest code on github: https://github.com/grgaortiz/udacity-wp
-Version: 1.5
+Version: 1.8
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -70,6 +70,7 @@ abbr[title] {
 b,
 strong {
     font-weight: bold;
+    word-wrap: break-word;
 }
 
 dfn {

@@ -905,6 +905,7 @@ h1.entry-title a:hover {
     text-decoration-color: #91DAEE;
 }
 
+
 img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
     max-width: 100%;
     height: auto;
@@ -924,6 +925,7 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
     letter-spacing: 0.01em;
 }
 
+img.attachment-post-thumbnail.wp-post-image,
 .entry-content p img {
     max-width:100%;
     height: auto;
@@ -1313,7 +1315,6 @@ Site Footer
 */
 .site-footer {
     background: #F4F4EF;
-    margin: 0;
     padding: 6.25em 0 6.25em 0;
 }
 
@@ -1634,10 +1635,6 @@ Modal
 /* Mobile */
 @media (max-width: 768px) {
 
-    #content, #colophon {
-        margin: 0;
-    }
-
     .modal .modal-body input[type="email"] {
         float:none;
         text-align: center;
@@ -1695,6 +1692,10 @@ Modal
         padding: 20px 0 20px 15px;
     }
 
+    .page-masthead .title {
+        padding: 20px 0 20px 0;
+    }
+
     .site-info-row {
         padding: 0 0 30px 0;
     }
@@ -1710,8 +1711,9 @@ Modal
     }
 
     .page-features {
-        padding-top: 40px;
-        padding-bottom: 0px;
+        padding: 40px 0;
+        margin: 0;
+        max-width: 100%;
     }
 
     #searchform {
