@@ -25,10 +25,10 @@
 	</header><!-- .entry-header -->
 
 	<?php
-	$large_image_url = wp_get_attachment_image_src(get_post_thumbnail_id(), 'large');
-	echo '<a href="' . $large_image_url[0] . '" title="' . the_title_attribute('echo=0') . '">';
-	the_post_thumbnail();
-	echo '</a>';
+	if(has_post_thumbnail()) {
+		$image_src = wp_get_attachment_image_src( get_post_thumbnail_id(),'full' );
+		echo '<img src="' . $image_src[0]  . '" width="100%"  />';
+	}
 	?>
 
 	<div class="entry-content">

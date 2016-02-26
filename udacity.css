@@ -750,6 +750,11 @@ Search
     font-size:12px;
 }
 
+.not-found-search .col-sm-3 {
+    width: 100%;
+    margin:30px 0;
+}
+
 /*
 Masthead
 */
@@ -1159,6 +1164,24 @@ nav.navigation.posts-navigation .nav-next a{
 }
 
 /*
+Video
+*/
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*
 Widgets
 */
 .widget {
@@ -1300,7 +1323,7 @@ footer .site-info {
 }
 
 .site-info-row {
-    padding: 100px 0 30px 0;
+    padding: 50px 0 30px 0;
 }
 
 .site-footer .mark {

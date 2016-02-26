@@ -27,7 +27,12 @@
 		<?php else : ?>
 
 			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'udacity_wp' ); ?></p>
-			<?php get_search_form(); ?>
+
+			<div class="row not-found-search">
+
+				<?php get_search_form(); ?>
+
+			</div>
 
 		<?php endif; ?>
 	</div><!-- .page-content -->
