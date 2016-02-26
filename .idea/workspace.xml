@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f26b448-2f76-4ff6-a971-b9d9998aee3f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/404.php" afterPath="$PROJECT_DIR$/404.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template-parts/content-none.php" afterPath="$PROJECT_DIR$/template-parts/content-none.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template-parts/content.php" afterPath="$PROJECT_DIR$/template-parts/content.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/udacity.css" afterPath="$PROJECT_DIR$/udacity.css" />
     </list>
     <ignored path="udacity_wp.iws" />
@@ -28,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40329218">
+            <state vertical-scroll-proportion="-12.25">
               <caret line="52" column="38" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
               <folding />
             </state>
@@ -51,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.0">
-              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.16460906">
+              <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -84,8 +82,8 @@
       <file leaf-file-name="udacity.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/udacity.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.7647059">
-              <caret line="1153" column="1" selection-start-line="1153" selection-start-column="1" selection-end-line="1153" selection-end-column="1" />
+            <state vertical-scroll-proportion="-20.764706">
+              <caret line="929" column="0" selection-start-line="929" selection-start-column="0" selection-end-line="929" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -157,8 +155,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="471" />
-    <option name="y" value="23" />
+    <option name="x" value="378" />
+    <option name="y" value="34" />
     <option name="width" value="960" />
     <option name="height" value="873" />
   </component>
@@ -286,7 +284,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="471" y="23" width="960" height="873" extended-state="0" />
+    <frame x="378" y="34" width="960" height="873" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30392158" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -698,26 +696,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.25">
+          <caret line="52" column="38" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/udacity.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7647059">
-          <caret line="1153" column="1" selection-start-line="1153" selection-start-column="1" selection-end-line="1153" selection-end-column="1" />
+        <state vertical-scroll-proportion="-20.764706">
+          <caret line="929" column="0" selection-start-line="929" selection-start-column="0" selection-end-line="929" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.0">
-          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40329218">
-          <caret line="52" column="38" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.16460906">
+          <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
           <folding />
         </state>
       </provider>
