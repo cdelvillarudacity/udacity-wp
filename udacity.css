@@ -926,6 +926,7 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
 
 .entry-content p img {
     max-width:100%;
+    height: auto;
 }
 
 .entry-content h1,
@@ -945,7 +946,6 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
 
 .entry-content ul li {
     margin: 1.5em 0;
-    /* color: #91daee; */
 }
 
 .single-post .post-author-wrap .avatar {
@@ -1314,7 +1314,7 @@ Site Footer
 .site-footer {
     background: #F4F4EF;
     margin: 0;
-    padding: 6.25em 0 6.25em 1.5em;
+    padding: 6.25em 0 6.25em 0;
 }
 
 footer .site-info {
@@ -1633,6 +1633,10 @@ Modal
 
 /* Mobile */
 @media (max-width: 768px) {
+
+    #content, #colophon {
+        margin: 0;
+    }
 
     .modal .modal-body input[type="email"] {
         float:none;
