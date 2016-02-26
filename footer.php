@@ -28,26 +28,26 @@
 							<ul class="nav_list">
 
 
-								<li><a href="/course/data-analyst-nanodegree--nd002">Data Analyst </a></li>
+								<li><a href="https://www.udacity.com/course/data-analyst-nanodegree--nd002">Data Analyst </a></li>
 
 
-								<li><a href="/course/ios-developer-nanodegree--nd003">iOS Developer </a></li>
+								<li><a href="https://www.udacity.com/course/ios-developer-nanodegree--nd003">iOS Developer </a></li>
 
 
-								<li><a href="/course/tech-entrepreneur-nanodegree--nd007">Tech Entrepreneur </a></li>
+								<li><a href="https://www.udacity.com/course/tech-entrepreneur-nanodegree--nd007">Tech Entrepreneur </a></li>
 
 
-								<li><a href="/course/machine-learning-engineer-nanodegree--nd009">Machine Learning
+								<li><a href="https://www.udacity.com/course/machine-learning-engineer-nanodegree--nd009">Machine Learning
 										Engineer </a></li>
 
 
-								<li><a href="/course/beginning-ruby--nd010">Beginning Ruby BETA</a></li>
+								<li><a href="https://www.udacity.com/course/beginning-ruby--nd010">Beginning Ruby BETA</a></li>
 
 
-								<li><a href="/course/android-developer-nanodegree--nd801">Android Developer </a></li>
+								<li><a href="https://www.udacity.com/course/android-developer-nanodegree--nd801">Android Developer </a></li>
 
 
-								<li><a href="/course/senior-web-developer--nd802">Senior Web Developer</a></li>
+								<li><a href="https://www.udacity.com/course/senior-web-developer--nd802">Senior Web Developer</a></li>
 
 
 							</ul>
@@ -56,9 +56,9 @@
 							<h3>Student Resources</h3>
 							<ul class="nav_list">
 								<li><a href="http://blog.udacity.com">Blog</a></li>
-								<li><a href="/faq">Help&nbsp;&amp;&nbsp;FAQ</a></li>
-								<li><a href="/courses/all">Catalog</a></li>
-								<li><a href="/veterans">Veteran Programs</a></li>
+								<li><a href="https://www.udacity.com/faq">Help&nbsp;&amp;&nbsp;FAQ</a></li>
+								<li><a href="https://www.udacity.com/courses/all">Catalog</a></li>
+								<li><a href="https://www.udacity.com/veterans">Veteran Programs</a></li>
 								<li><a href="https://play.google.com/store/apps/details?id=com.udacity.android">Android
 										App</a></li>
 								<li><a href="https://itunes.apple.com/us/app/id819700933?mt=8">iOS App</a></li>
@@ -67,24 +67,24 @@
 						<li class="footer_nav_toggle">
 							<h3>Udacity</h3>
 							<ul class="nav_list">
-								<li><a href="/us">About</a></li>
-								<li><a href="/press">In the News</a></li>
-								<li><a href="/jobs">Jobs @ Udacity</a></li>
-								<li><a href="/georgia-tech">Georgia Tech</a></li>
-								<li><a href="/business">Udacity for Business</a></li>
-								<li><a href="/employers">Hire Graduates</a></li>
-								<li><a href="/success">Student Success</a></li>
+								<li><a href="https://www.udacity.com/us">About</a></li>
+								<li><a href="https://www.udacity.com/press">In the News</a></li>
+								<li><a href="https://www.udacity.com/jobs">Jobs @ Udacity</a></li>
+								<li><a href="https://www.udacity.com/georgia-tech">Georgia Tech</a></li>
+								<li><a href="https://www.udacity.com/business">Udacity for Business</a></li>
+								<li><a href="https://www.udacity.com/employers">Hire Graduates</a></li>
+								<li><a href="https://www.udacity.com/success">Student Success</a></li>
 							</ul>
 						</li>
 						<li class="footer_nav_toggle">
 							<h3>Inquiries</h3>
 							<ul class="nav_list">
 								<!-- <li><a href="#">Press</a></li> -->
-								<li><a href="/contact">Contact Us</a></li>
-								<li><a href="/catalog-api">Developer API</a></li>
-								<li><a href="/legal">Legal</a></li>
+								<li><a href="https://www.udacity.com/contact">Contact Us</a></li>
+								<li><a href="https://www.udacity.com/catalog-api">Developer API</a></li>
+								<li><a href="https://www.udacity.com/legal">Legal</a></li>
 								<li><a href="http://status.udacity.com">Service Status</a></li>
-								<li><a href="/sitemap">Site Map</a></li>
+								<li><a href="https://www.udacity.com/sitemap">Site Map</a></li>
 							</ul>
 						</li>
 					</ul>

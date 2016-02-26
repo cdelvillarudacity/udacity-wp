@@ -12,11 +12,14 @@ get_header(); ?>
 <?php while (have_posts()) : the_post(); ?>
 
 	<?php
-	$large_image_url = wp_get_attachment_image_src(get_post_thumbnail_id(), 'large');
+	$large_image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+	if($large_image_url == '') {
+		$large_image_url = get_bloginfo('template_directory')."/images/masthead-default.jpg";
+	}
 	?>
 
 	<div class="wrap single-post-masthead"
-	     style="background:url('http://localhost/Udacity/wp-content/uploads/2016/01/photo-1448932223592-d1fc686e76ea.jpeg') no-repeat bottom center;">
+	     style="background-image:url('<?php echo $large_image_url; ?>');">
 		<div class="after">
 			<div class="container">
 
@@ -136,12 +139,10 @@ return w?false:true">
 		<div class="container">
 			<div class="row post-navigation">
 				<div class="post-navigation-left col-md-6">
-					<h5>Previous Post</h5>
-					<?php previous_post('<span>&larr;</span> %', '', 'yes'); ?>
+					<?php previous_post('<h5>Previous Post</h5> <span>&larr;</span> %', '', 'yes'); ?>
 				</div>
 				<div class="post-navigation-right col-md-6">
-					<h5>Next Post</h5>
-					<?php next_post('% <span>&rarr;</span>', '', 'yes'); ?>
+					<?php next_post('<h5>Next Post</h5> % <span>&rarr;</span>', '', 'yes'); ?>
 				</div>
 			</div>
 		</div>

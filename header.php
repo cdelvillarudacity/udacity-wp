@@ -16,6 +16,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
@@ -45,15 +46,15 @@
 				</div><!-- .site-branding -->
 
 				<div class="col-xs-8 nav-block">
-					<a data-navbar-guest="" href="https://www.udacity.com/account/auth#!/signup" class="sign_in_link"
+					<!-- <a data-navbar-guest="" href="https://www.udacity.com/account/auth#!/signup" class="sign_in_link"
 					   style="display: block;">Sign Up</a>
 					<a data-navbar-guest="" href="https://www.udacity.com/account/auth#!/signin" class="sign_in_link"
-					   style="display: block;">Sign In</a>
+					   style="display: block;">Sign In</a> -->
 					<nav class="main">
 						<ul class="main_nav">
 							<li class="home_link"><a href="/">Home</a></li>
-							<li class="nanodegree_link"><a href="/nanodegree">Nanodegree</a></li>
-							<li class="free_courses_link"><a href="/courses/all">Catalog</a></li>
+							<li class="nanodegree_link"><a href="https://www.udacity.com/nanodegree">Nanodegree</a></li>
+							<li class="free_courses_link"><a href="https://www.udacity.com/courses/all">Catalog</a></li>
 						</ul>
 						<a href="#" class="nav_toggle">
 							<span class="bar bar_top"></span>

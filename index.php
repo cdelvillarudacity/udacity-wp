@@ -14,8 +14,12 @@
 
 get_header(); ?>
 
+<?php
+$large_image_url = get_bloginfo('template_directory')."/images/masthead-default.jpg";
+?>
+
 <div class="wrap page-masthead"
-     style="background:url('http://localhost/Udacity/wp-content/uploads/2016/01/photo-1448932223592-d1fc686e76ea.jpeg') no-repeat bottom center;">
+     style="background-image:url('<?php echo $large_image_url; ?>');">
 	<div class="after">
 		<div class="container">
 
@@ -59,7 +63,7 @@ get_header(); ?>
 
 				<ul class="tab_list">
 					<li class="active"><a href="#">All Posts</a></li>
-					<?php wp_list_categories('&title_li='); ?>
+					<?php wp_list_categories('&title_li=&number=5&include=32,22,47,18,49'); ?>
 					<li class="extra-categories-item">
 						<!-- Single button -->
 						<div class="btn-group">
@@ -67,7 +71,7 @@ get_header(); ?>
 								<span class="glyphicon glyphicon-remove-circle gly-rotate-45"></span>
 							</a>
 							<ul class="dropdown-menu extra-categories">
-								<?php wp_list_categories('&title_li='); ?>
+								<?php wp_list_categories('&title_li=&hide_empty=1&number=5&exclude=32,22,47,18,49&include=39,20,16,133,28'); ?>
 							</ul>
 						</div>
 					</li>

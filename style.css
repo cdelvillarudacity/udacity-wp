@@ -1,22 +1,17 @@
 /*
-Theme Name: Udacity
-Theme URI:
-Author:
-Author URI:
-Description: TODO
-Version: 0.1
-License: GNU General Public License
-License URI: license.txt
-Tags: bootstrap, _s, _strap
+Theme Name: Udacity WP
+Theme URI: http://blog.udacity.com
+Author: Udacity
+Author URI: http://udacity.com
+Description: The official Udacity WordPress theme. You can find the latest code on github: https://github.com/grgaortiz/udacity-wp
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Based on _strap [https://github.com/ptbello/_strap], a mashup of _s [https://github.com/Automattic/_s] and Bootstrap [https://github.com/twitter/bootstrap]
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
 */
-/*!
- * Bootstrap v3.3.5 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
@@ -3768,7 +3763,6 @@ select[multiple].input-lg {
 .btn {
     display: inline-block;
     margin-bottom: 0;
-    font-weight: normal;
     text-align: center;
     vertical-align: middle;
     touch-action: manipulation;
@@ -3776,8 +3770,6 @@ select[multiple].input-lg {
     background-image: none;
     border: none;
     white-space: nowrap;
-    padding: 6px 12px;
-    font-size: 13px;
     line-height: 1.42857143;
     border-radius: .307692308em;
     -webkit-user-select: none;
@@ -3787,6 +3779,9 @@ select[multiple].input-lg {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     transition: background .3s ease;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 1em 4.5em;
 }
 
 .btn:focus,
@@ -3845,8 +3840,8 @@ fieldset[disabled] a.btn {
 
 .btn-default:hover {
     color: #fff;
-    background-color: #7d97ad;
-    border-color: #7d97ad;
+    background-color: #607e97;
+    border-color: #607e97;
 }
 
 .btn-default:active,
