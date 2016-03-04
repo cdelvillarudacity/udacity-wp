@@ -29,6 +29,7 @@ function udacity_wp_custom_header_setup() {
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
+		'flex-width'             => true,
 		'wp-head-callback'       => 'udacity_wp_header_style',
 		'admin-head-callback'    => 'udacity_wp_admin_header_style',
 		'admin-preview-callback' => 'udacity_wp_admin_header_image',
