@@ -65,6 +65,7 @@
 							<li class="home_link"><a href="/">Home</a></li>
 							<li class="nanodegree_link"><a href="https://www.udacity.com/nanodegree">Nanodegree</a></li>
 							<li class="free_courses_link"><a href="https://www.udacity.com/courses/all">Catalog</a></li>
+							<li class="my_classroom_link"><a href="https://www.udacity.com/me">My Classroom</a></li>
 						</ul>
 						<a href="#" class="nav_toggle">
 							<span class="bar bar_top"></span>

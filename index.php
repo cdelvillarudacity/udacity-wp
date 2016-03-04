@@ -19,7 +19,7 @@ $large_image_url = get_bloginfo('template_directory')."/images/masthead-default.
 ?>
 
 <div class="wrap page-masthead"
-     style="background-image:url('<?php echo $large_image_url; ?>');">
+     style="background-image:url('<?php header_image(); ?>');">
 	<div class="after">
 		<div class="container">
 

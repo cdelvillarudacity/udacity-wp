@@ -19,7 +19,7 @@ get_header(); ?>
 	?>
 
 	<div class="wrap single-post-masthead"
-	     style="background-image:url('<?php echo $large_image_url; ?>');">
+	     style="background-image:url('<?php header_image(); ?>');">
 		<div class="after">
 			<div class="container">
 
