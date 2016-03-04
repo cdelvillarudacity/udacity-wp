@@ -13,13 +13,16 @@ get_header(); ?>
 
 	<?php
 	$large_image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-	if($large_image_url == '') {
-		$large_image_url = get_bloginfo('template_directory')."/images/masthead-default.jpg";
-	}
-	?>
 
+	if($large_image_url == '') {
+		?>
 	<div class="wrap single-post-masthead"
-	     style="background-image:url('<?php header_image(); ?>');">
+	     style="background-image:url('<?php header_image() ?>');">';
+	<?php } else { ?>
+		<div class="wrap single-post-masthead"
+	     style="background-image:url('<?php echo $large_image_url ?>');">
+	<?php } ?>
+
 		<div class="after">
 			<div class="container">
 

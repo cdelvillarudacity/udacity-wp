@@ -14,12 +14,8 @@
 
 get_header(); ?>
 
-<?php
-$large_image_url = get_bloginfo('template_directory')."/images/masthead-default.jpg";
-?>
+<div class="wrap page-masthead" style="background-image:url('<?php header_image() ?>');">
 
-<div class="wrap page-masthead"
-     style="background-image:url('<?php header_image(); ?>');">
 	<div class="after">
 		<div class="container">
 
@@ -67,7 +63,8 @@ $large_image_url = get_bloginfo('template_directory')."/images/masthead-default.
 					<li class="extra-categories-item">
 						<!-- Single button -->
 						<div class="btn-group">
-							<a class="dropdown-toggle extra-categories-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<a class="dropdown-toggle extra-categories-btn" data-toggle="dropdown"
+							   aria-haspopup="true" aria-expanded="false">
 								<span class="glyphicon glyphicon-remove-circle gly-rotate-45"></span>
 							</a>
 							<ul class="dropdown-menu extra-categories">
