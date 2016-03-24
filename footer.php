@@ -143,9 +143,11 @@
 				<small>learning = growing</small>
 				<p>Sign up for Udacity blog updates to get the latest in guidance and inspiration as you discover
 					programming, web development, data science, and more.</p>
-				<form class="form-inline">
+				<form class="form-inline" action="http://udacity.us9.list-manage.com/subscribe/post">
 					<div class="form-group">
-						<input type="email" class="form-control" id="subscribeEmail" placeholder="Email Address">
+						<input type="hidden" name="u" value="4d05b2ee9291e1caafe0113a7">
+						<input type="hidden" name="id" value="cbed5f65c4">
+						<input type="email" name="MERGE0" class="form-control" id="MERGE0" placeholder="Email Address">
 						<button type="submit" class="btn btn-primary">Submit</button>
 					</div>
 				</form>
