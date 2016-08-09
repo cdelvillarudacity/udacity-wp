@@ -131,6 +131,7 @@
 </footer><!-- #colophon -->
 
 <!-- Subscribe Modal -->
+<!--comment test-->
 <div class="modal fade" id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="subscribeModalLabel">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
