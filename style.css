@@ -8330,6 +8330,7 @@ footer .site-info {
     padding-left: 15px;
     padding-right: 15px;
     line-height: 1.7em;
+    text-align: center;
 }
 
 @media (min-width: 1200px) {

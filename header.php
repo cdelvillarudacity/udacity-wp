@@ -27,8 +27,9 @@
 		jQuery(document).ready(function () {
 			jQuery(".nav_toggle").click(function (e) {
 				jQuery("nav").toggleClass("nav--on"), e.preventDefault()
-			}), jQuery(".footer_nav_toggle h3").click(function (e) {
-				jQuery(this).parent().toggleClass("nav--on"), e.preventDefault()
+			}), jQuery(".footer__nav__toggle").click(function (e) {
+				jQuery(this).toggleClass("nav--on"), e.preventDefault(),
+				jQuery(this).next().toggleClass("nav--on"), e.preventDefault()
 			});
 		});
 	</script>
